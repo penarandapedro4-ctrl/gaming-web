@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nexus Gaming</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="container">
+
+<div class="logo"><h1>NEXUS</h1></div>
+
+<div class="banner">
+<img src="img/banner.jpg" alt="banner">
+</div>
+
+<div class="menu">
+<a href="tienda.html"><button class="btn tienda">TIENDA</button></a>
+<a href="comunidad.html"><button class="btn comunidad">COMUNIDAD</button></a>
+<a href="noticias.html"><button class="btn noticias">NOTICIAS</button></a>
+<a href="torneos.html"><button class="btn torneos">TORNEOS</button></a>
+</div>
+
+<div class="video-section">
+  <h2>Video destacado</h2>
+  <a href="#" id="openVideoLink" class="video-link">Abrir video</a>
+  <div id="videoPreview" class="video-preview hidden">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/ajAK6T1wZIY?si=gCDm50RQ7XfaQ70a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+</div>
+
+</div>
+<script>
+  document.getElementById('openVideoLink').addEventListener('click', function(event) {
+    event.preventDefault();
+    document.getElementById('videoPreview').classList.remove('hidden');
+  });
+</script>
+</body>
+</html>
