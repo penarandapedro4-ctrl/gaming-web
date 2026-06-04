@@ -268,4 +268,20 @@ font-size:14px;
 width:95%;
 }
 
+  .filtros{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    flex-wrap:wrap;
+    margin:20px 0;
+}
+
+.filtro{
+    padding:10px;
+    border:none;
+    border-radius:10px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
 }
